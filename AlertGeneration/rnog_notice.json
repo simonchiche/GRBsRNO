@@ -1,0 +1,21 @@
+{
+    "title": "RNO-G NOTICE",
+    "notice_type": "RNO-G Neutrino Candidate",
+    "event_id": "RNO-G_20261001_001",
+    "event_type": "nu_mu CC",
+    "event_time": "2026-10-01T07:32:15Z",
+    "reconstructed_position": {
+        "ra_deg": 235.587,
+        "dec_deg": 0.969,
+        "frame": "ICRS"
+    },
+    "position_error": {
+        "radius_deg": 1.2,
+        "probability": 0.9
+    },
+    "energy": {
+        "value": 100000.0,
+        "unit": "TeV"
+    },
+    "notice_time": "2026-10-01T08:32:00.706685Z"
+}

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<voe:VOEvent xmlns:voe="http://www.ivoa.net/xml/VOEvent/v2.0" ivorn="ivo://rnog.org/alerts#RNO-G_20261001_001" role="test" version="2.0">
+    <Who>
+        <Date>2026-10-01T08:32:00.708257Z</Date>
+    </Who>
+    <What>
+        <Param name="event_id" value="RNO-G_20261001_001" dataType="string" />
+        <Param name="neutrino_type" value="nu_mu CC" dataType="string" />
+        <Param name="energy" value="100000.0" unit="TeV" dataType="float" />
+    </What>
+    <WhereWhen>
+        <ObsDataLocation>
+            <ObservatoryLocation id="RNO-G" />
+            <ObservationLocation>
+                <AstroCoordSystem id="UTC-ICRS-TOPO" />
+                <AstroCoords coord_system_id="UTC-ICRS-TOPO">
+                    <Time unit="s">
+                        <TimeInstant>
+                            <ISOTime>2026-10-01T07:32:15Z</ISOTime>
+                        </TimeInstant>
+                    </Time>
+                    <Position2D unit="deg">
+                        <Value2>
+                            <C1>235.587</C1>
+                            <C2>0.969</C2>
+                        </Value2>
+                        <Error2Radius>1.2</Error2Radius>
+                    </Position2D>
+                </AstroCoords>
+            </ObservationLocation>
+        </ObsDataLocation>
+    </WhereWhen>
+</voe:VOEvent>
