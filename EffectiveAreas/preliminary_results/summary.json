@@ -1,0 +1,102 @@
+{
+  "input_file": "/Users/chiche/Desktop/GRBsRNO/EffectiveAreas/preliminary_results/neutrino_events.hdf5",
+  "python": "3.11.18",
+  "architecture": "arm64",
+  "nuradiomc_version": "3.1.0",
+  "nuradiomc_commit": "599eb0a9e6abb35277c661fc4a6e2cad0b6a75da",
+  "cross_sections_model": "ctw",
+  "seed": 12345,
+  "generation_settings": {
+    "depth_km": 3,
+    "events": 50000,
+    "log_energy_max": 20,
+    "log_energy_min": 16,
+    "model": "ctw",
+    "radius_km": 5,
+    "seed": 12345
+  },
+  "zenith_bounds_deg": [
+    0.0,
+    180.0
+  ],
+  "azimuth_bounds_deg": [
+    0.0,
+    360.0
+  ],
+  "n_primary_neutrinos": 50000,
+  "n_shower_rows": 61805,
+  "n_cc": 35632,
+  "n_nc": 14368,
+  "cc_fraction": 0.71264,
+  "n_hadronic_showers": 50000,
+  "n_electromagnetic_showers": 11805,
+  "energy_min_eV": 1e+16,
+  "energy_max_eV": 1e+20,
+  "volume_km3": 235.61944901923448,
+  "mean_inelasticity": 0.21083309640525877,
+  "flavour_counts": {
+    "12": 8305,
+    "-12": 8230,
+    "14": 8473,
+    "-14": 8318,
+    "16": 8270,
+    "-16": 8404
+  },
+  "checks": {
+    "primary_count_matches_metadata": true,
+    "only_cc_nc": true,
+    "physical_inelasticities": true,
+    "primary_energy_bounds": true,
+    "zenith_bounds": true,
+    "azimuth_bounds": true,
+    "one_hadronic_shower_per_primary": true,
+    "electromagnetic_count_matches_electron_cc": true,
+    "multiplicity_matches_interaction": true,
+    "hadronic_energy_partition": true,
+    "electromagnetic_energy_partition": true,
+    "vertices_inside_volume": true
+  },
+  "figures": [
+    "01_neutrino_energy",
+    "02_arrival_directions",
+    "03_interaction_vertices",
+    "04_flavours_and_interactions",
+    "05_inelasticity",
+    "06_cc_fraction",
+    "07_shower_energies_and_multiplicity",
+    "08_askaryan_example",
+    "00_overview"
+  ],
+  "radio_example": {
+    "model": "Alvarez2009",
+    "shower_type": "hadronic",
+    "energy_eV": 1e+18,
+    "distance_m": 1000,
+    "refractive_index": 1.78,
+    "viewing_offsets_deg": [
+      0,
+      1,
+      2
+    ],
+    "cherenkov_angle_deg": 55.81978427542137,
+    "interpretation": "Separate illustrative shower in homogeneous ice. No ice attenuation, firn ray tracing, antenna response, noise or trigger is applied."
+  },
+  "elapsed_seconds": 2.5,
+  "scope": "Unweighted forced primary interactions. Sampling distributions, not detected events or an astrophysical rate. No Earth absorption or detector response.",
+  "inelasticity_note": "CTW uses an energy-independent inelasticity distribution.",
+  "secondary_lepton_propagation": false,
+  "cc_model_comparison": {
+    "neutrinos": {
+      "expected_cc_count": 17854.295099204155,
+      "observed_cc_count": 17856,
+      "mc_standard_deviation": 71.60483376196024,
+      "pull": 0.023809856210442033
+    },
+    "antineutrinos": {
+      "expected_cc_count": 17788.20913593441,
+      "observed_cc_count": 17776,
+      "mc_standard_deviation": 71.46050238792759,
+      "pull": -0.17085152673753298
+    }
+  }
+}

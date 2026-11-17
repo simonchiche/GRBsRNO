@@ -1,0 +1,26 @@
+# Local Python environment and external source checkouts
+/.venv/
+/.software/
+/tilepy/
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.cache/
+.ipynb_checkpoints/
+
+# macOS metadata and local editor configuration
+.DS_Store
+/.vscode/
+
+# Generated simulation data and waveform files
+*.hdf5
+*.h5
+*.nur
+
+# Reproducible archives and scratch validation runs
+/EffectiveAreas/*_bundle.zip
+/EffectiveAreas/env_check/
+/EffectiveAreas/smoke_test/
+
+# Keep source code, documentation, small figures and result summaries tracked.
